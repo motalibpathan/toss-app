@@ -99,7 +99,7 @@ const TossForm = () => {
           type="text"
           id="opt1"
           name="opt1"
-          placeholder="Option 1"
+          placeholder="Enter Option 1"
           value={toss.options[0]}
           onChange={(e) =>
             setToss({ ...toss, options: [e.target.value, toss.options[1]] })
@@ -111,7 +111,7 @@ const TossForm = () => {
           type="text"
           id="opt2"
           name="opt2"
-          placeholder="Option 2"
+          placeholder="Enter Option 2"
           value={toss.options[1]}
           onChange={(e) =>
             setToss({ ...toss, options: [toss.options[0], e.target.value] })
