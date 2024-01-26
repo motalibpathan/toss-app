@@ -76,6 +76,7 @@ const TossForm = () => {
         ? parsed.filter((toss: IToss) => toss.id !== id)
         : [];
       setHistory(filtered);
+      localStorage.setItem("tossHistory", JSON.stringify(filtered));
     }
   }, []);
 
